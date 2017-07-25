@@ -237,8 +237,8 @@ int fget_line(char *s, int len, FILE *stream)
 
     if (strchr(s,'\n') == NULL)
     {
-    	scanf("%*[^\n]");
-    	getchar();
+    	fscanf(stream,"%*[^\n]");
+    	fgetc(stream);
     }   	
 
     return SUCCESS;
