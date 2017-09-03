@@ -15,9 +15,7 @@ int main(void)
 		printf("arr[%d] : ",i);
 		temp = get_ushort(arr+i);
 		if (temp == FAILURE)
-		{
 			fprintf(stderr,"error  : invalid input. try again..\n");
-		}
 		else if (temp == EOF)
 			exit(EXIT_FAILURE);
 		else
