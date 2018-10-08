@@ -1,9 +1,8 @@
 # SMART-INPUT-LIBRARY
 
 C Library to perform operations on input streams with data validation and robust error check <br>
-The library is written in c programming by @venudayyam (binary_10) 
-
-See on :  [code-review - stackexchange.com] (https://codereview.stackexchange.com/questions/162349/c-library-for-standard-input-operations-with-data-validation-and-error-check)
+The library is written in c programming by @venudayyam (binary_10) reviewed on [code-review - stackexchange.com] (https://codereview.stackexchange.com/questions/162349/c-library-for-standard-input-operations-with-data-validation-and-error-check)
+ 
 
 The library contain two sets of subroutines one of which operate on the stream passed as an argument 'stream' and the other set operate  directly on standard input stream (stdin).
 <br><br>Each of the subroutines read a line (which is then stored as a string) from input stream ('stream' or stdin), converts it into corresponding built-in data type and stores the result in the location pointed to by 'value'. An 'int' type value is returned by the subroutines.
