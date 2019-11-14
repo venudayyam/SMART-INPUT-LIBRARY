@@ -22,10 +22,32 @@ The key motivation behind this implementation is that the standard input functio
 - input value is said to be valid only when the input string (excluding initial white spaces and sign)
   contains only digits and if the converted value can be stored in the specified data type.
 
-
 <br>
 
 ~~~~ 
-     > gcc -Wall -std=c11 sample.c smartinput.c -o sample
-     > sample
+  /* sample inputs and outputs of `get_int()` (note. sizeof(int) = 4) */
+
+  "2147483647\n"    -- true  (INT_MAX)
+  "2147483648\n"    -- false 
+  "-2147483648\n"   -- true  (INT_MIN)
+  "-2147483649\n"   -- false
+  "25ds\n"          -- false
+  "asdjkljasdf\n"   -- false 
+  "25 256\n"        -- false
+  "+1\n"            -- true
+  "-1\n"            -- true
+  EOF               -- false
+  " 1\n"            -- true 
+~~~~ 
+
+
+~~~~ 
+  > gcc -Wall -std=c11 sample.c smartinput.c -o sample
+  > sample
 ~~~~
+
+
+
+
+
+
