@@ -13,13 +13,10 @@ The key motivation behind this implementation is that the standard input functio
 
 <br><br>KEY FEATURES:
 
-- data overflow and underflow check on input
+- Robust error check on the Input data.
 
-- input buffer is flushed(empty) after each call to the set of functions which operate on
+- Input buffer is flushed after each call to the set of functions which operate on
   standard input stream (stdin)
-
-- input value is said to be valid only when the input string (excluding initial white spaces and sign)
-  contains only digits and if the converted value can be stored in the specified data type.
 
 <br>
 
