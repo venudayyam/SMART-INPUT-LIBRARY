@@ -21,7 +21,6 @@ int main(void)
 		else
 			++i;
 	}
-
 	puts("\n\nLIST\n");
 	for (int i=0; i<MAX; i++)
 		printf("arr[%d] = %d\n",i,arr[i]);
