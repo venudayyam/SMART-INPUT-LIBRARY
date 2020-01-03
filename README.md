@@ -23,17 +23,17 @@ The key motivation behind this implementation is that the standard input functio
 ~~~~ 
   /* sample inputs and outputs of `get_int()` (note. sizeof(int) = 4) */
 
-  "2147483647\n"    -- true  (INT_MAX)
-  "2147483648\n"    -- false 
-  "-2147483648\n"   -- true  (INT_MIN)
-  "-2147483649\n"   -- false
-  "25ds\n"          -- false
-  "asdjkljasdf\n"   -- false 
-  "25 256\n"        -- false
-  "+1\n"            -- true
-  "-1\n"            -- true
-  EOF               -- false
-  " 1\n"            -- true 
+  "2147483647\n"    -- SUCCESS  (INT_MAX)
+  "2147483648\n"    -- FAILURE
+  "-2147483648\n"   -- SUCCESS  (INT_MIN)
+  "-2147483649\n"   -- FAILURE
+  "25ds\n"          -- FAILURE
+  "asdjkljasdf\n"   -- FAILURE 
+  "25 256\n"        -- FAILURE
+  "+1\n"            -- SUCCESS
+  "-1\n"            -- SUCCESS
+  EOF               -- EOF
+  " 1\n"            -- SUCCESS 
 ~~~~ 
 
 
